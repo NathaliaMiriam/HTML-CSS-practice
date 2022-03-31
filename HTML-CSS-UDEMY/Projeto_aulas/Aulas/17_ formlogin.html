@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!doctype informa ao agente de usuário a versão do html que deve ser renderizada--> 
+<html lang="pt-br">
+    <head>
+        <title> Página de exemplo de estrutura básica do html </title>
+        <meta charset="utf-8">
+        <meta name=“author” content=“Nathália”>
+        <meta name=“description” content=“form login”>
+        <meta name=“keywords” content=“html5, css, tecnologia”>
+
+        <style>
+
+            .formLogin{
+                width: 250px;
+                margin: 50px auto 0;
+                font-family: sans-serif;
+            }
+
+            .formLogin fieldset{
+                background-color: #ccc;
+            }
+
+            .formLogin legend{
+                background-color: rgb(238, 142, 206);
+                display: inline-block;
+                padding: 10px;
+            }
+
+            .formLogin label{
+                display: block;
+                margin-top: 15px;
+                margin-bottom: 5px;
+            }
+
+            #user, #pass, .btn{
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                padding: 15px;
+                font-size: 18px;
+                border: none;
+            }
+
+            #user:focus, #pass:focus{
+                background-color: rgb(238, 142, 206);
+            }
+
+            .btn{
+                margin-top: 15px;
+            }
+
+            #user{
+                margin-bottom: 15px;
+            }
+
+        </style>
+    </head>
+    
+    <body>
+
+        <h1>Exemplo de Formulário</h1>
+        
+
+        <form action="#" method="post" class="formLogin">
+            <fieldset>
+
+                <legend>Login</legend>
+
+                <label for="user">Digite o usuário</label>
+                <input type="text" id="user" name="user" autofocus>
+
+                <label for="pass">Digite a senha</label>
+                <input type="password" id="pass" name="pass">
+
+                <input type="submit" value="logar" class="btn">
+
+            </fieldset>
+        </form>
+
+    </body>
+</html>
