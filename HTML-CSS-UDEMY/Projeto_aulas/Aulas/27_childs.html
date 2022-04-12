@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!doctype informa ao agente de usuário a versão do html que deve ser renderizada--> 
+<html lang="pt-br">
+    <head>
+        <title> Página de exemplo de estrutura básica do html </title>
+        <meta charset="utf-8">
+        <meta name=“author” content=“Nathália”>
+        <meta name=“description” content=“childs”>
+        <meta name=“keywords” content=“html5, css, tecnologia”>
+
+        <style>
+
+            div p:nth-of-type(3){
+                color: blue;
+            }
+
+            .destaque:nth-of-type(1){
+                color: red;
+            }
+
+            .destaque:first-child{
+                background-color: #ccc;
+            }
+
+            p:last-child{
+                text-align: center;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <div>
+            <p class="destaque">Meu parágrafo 1</p>
+            <p>Meu parágrafo 2</p>
+            <hr>
+            <p>Meu parágrafo 3</p>
+            <p>Meu parágrafo 4</p>
+            <hr>
+            <p>Meu parágrafo 5</p>
+            <p>Meu parágrafo 6</p>
+            <hr>
+            <p>Meu parágrafo 7</p>
+            <p>Meu parágrafo 8</p>
+        </div>
+
+    </body>
+</html>

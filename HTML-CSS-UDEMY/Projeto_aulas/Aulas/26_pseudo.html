@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!doctype informa ao agente de usuário a versão do html que deve ser renderizada--> 
+<html lang="pt-br">
+    <head>
+        <title> Página de exemplo de estrutura básica do html </title>
+        <meta charset="utf-8">
+        <meta name=“author” content=“Nathália”>
+        <meta name=“description” content=“pseudo”>
+        <meta name=“keywords” content=“html5, css, tecnologia”>
+
+        <style>
+
+            input[type="checkbox"]{
+                width: 100px;
+                height: 100px;
+            }
+
+            input[type="checkbox"]:checked{
+                width: 50px;
+                height: 50px;
+            }
+
+            button:disabled{
+                background-color: rgb(200, 159, 239);
+            }
+
+            p{
+                color: rgb(3, 72, 109);
+            }
+
+            p:empty:before{
+                content: "Parágrado vazio não dá, né?!";
+            }
+
+            input[type="text"]:focus{
+                background-color: #ccc;
+            }
+
+            input[type="text"]:read-only{
+                background-color: yellow;
+            }
+
+            /* o espaço ao lado do hover é o tab do teclado que tbm funciona na página */
+
+            a:focus, a:hover    {
+                background-color: rgb(200, 159, 239);
+            }
+
+            div:focus, div:hover{
+                background-color: rgb(200, 159, 239);
+            }
+
+            input::placeholder{
+                color: red;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <label><input type="checkbox" value="sim">Aceito o contrato</label>
+
+        <button>Vai</button>
+        <button disabled>Volta</button>
+
+        <p>Parágrafo 1</p>
+        <p> </p>
+        <p></p>
+        <hr>
+
+        <input type="text">
+        <input type="text" value="valor inicial">
+        <input type="text" value="valor inicial" read-only>
+        <input type="text" value="valor inicial" disabled>
+        <input type="text" placeholder="valor do placeholder">
+
+        <ul>
+            <li><a href="#">Link Falso</a></li>
+            <li><a href="#">Link Falso</a></li>
+            <li><a href="#">Link Falso</a></li>
+            <li><a href="#">Link Falso</a></li>
+        </ul>
+
+        <div tabindex="1">Div 1</div>
+        <div tabindex="2">Div 2</div>
+        <div tabindex="3">Div 3</div>
+
+    </body>
+</html>
