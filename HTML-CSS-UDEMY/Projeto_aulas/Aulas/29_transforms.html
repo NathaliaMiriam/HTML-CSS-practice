@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!doctype informa ao agente de usuário a versão do html que deve ser renderizada--> 
+<html lang="pt-br">
+    <head>
+        <title> Página de exemplo de estrutura básica do html </title>
+        <meta charset="utf-8">
+        <meta name=“author” content=“Nathália”>
+        <meta name=“description” content=“transforms”>
+        <meta name=“keywords” content=“html5, css, tecnologia”>
+
+        <style>
+
+            html, body{
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            .div1{
+                width: 150px;
+                height: 50px;
+                background-color: blueviolet;
+                transform: translate(50%, 50%);
+            }
+
+            .div2{
+                width: 150px;
+                height: 50px;
+                background-color: greenyellow;
+                position: relative;
+                left: 50%;
+            }
+
+            .div3{
+                width: 50%;
+                text-align: justify;
+                border: 2px solid black;
+                overflow: hidden;
+            }
+
+            .div3-interna{
+                background-color: rgb(238, 66, 203);
+                transform: translate(77%);
+            }
+
+            .div4{
+                width: 50%;
+                text-align: justify;
+                border: 2px solid black;
+                overflow: hidden;
+            }
+
+            .div4-interna{
+                background-color: rgb(238, 66, 203);
+                transform: rotate(30deg);
+                text-align: center;
+            }
+
+            .div5{
+                width: 50%;
+                text-align: justify;
+                border: 2px solid black;
+                overflow: hidden;
+            }
+
+            .div5-interna{
+                background-color: rgb(238, 66, 203);
+                transform: rotate(7deg);
+                transform-origin: left top;
+                text-align: center;
+            }
+
+            .div6{
+                width: 50%;
+                text-align: justify;
+                border: 2px solid black;
+                overflow: hidden;
+            }
+
+            .div6-interna{
+                background-color: rgb(238, 66, 203);
+                text-align: center;
+                transform: rotate(30deg) translate(30px);
+            }
+
+            .div7{
+                width: 50%;
+                text-align: justify;
+                border: 2px solid black;
+                overflow: hidden;
+            }
+
+            .div7-interna{
+                background-color: rgb(238, 66, 203);
+                text-align: center;
+                transform: translate(50px) rotate(50deg);
+            }
+
+            .div8{
+                width: 100px;
+                height: 100px;
+                background-color: orange;
+                transform: skew(10deg);
+            }
+
+            .div9{
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+                transform: scale(.5) translateX(50%);
+                transition: transform .5s;
+            }
+
+            .div9:hover{
+                transform: scale(2);
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <div class="div1">Div 1</div>
+        <div class="div2">Div 2</div>
+        <hr>
+        <div class="div3">
+            <div class="div3-interna">Conteúdo Lorem Ipsum</div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever 
+            since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+
+        <hr>
+
+        <div class="div4">
+            <div class="div4-interna">Conteúdo Lorem Ipsum</div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever 
+            since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+
+        <hr>
+
+        <div class="div5">
+            <div class="div5-interna">Conteúdo Lorem Ipsum</div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever 
+            since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+
+        <hr>
+
+        <div class="div6">
+            <div class="div6-interna">Conteúdo Lorem Ipsum</div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever 
+            since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+
+        <hr>
+
+        <div class="div7">
+            <div class="div7-interna">Conteúdo Lorem Ipsum</div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever 
+            since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+
+        <hr>
+
+        <div class="div8">Div 8</div>
+        <div class="div9">Div 9</div>
+     
+    </body>
+</html>
