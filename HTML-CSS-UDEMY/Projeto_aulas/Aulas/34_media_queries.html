@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!doctype informa ao agente de usuário a versão do html que deve ser renderizada--> 
+<html lang="pt-br">
+    <head>
+        <title> Página de exemplo de estrutura básica do html </title>
+        <meta charset="utf-8">
+        <meta name=“author” content=“Nathália”>
+        <meta name=“description” content=“media queries”>
+        <meta name=“keywords” content=“html5, css, tecnologia”>
+
+        <meta name="viewport" content="width=device-width">
+
+        <style>
+
+            body{
+                background-color: aquamarine;
+                font-size: 16px;
+            }
+
+            .teste{
+                background-color: red;
+                width: 320px;
+                height: 50px;
+            }
+
+            .container{
+                background-color: white;
+                padding: 15px;
+                font-size: 24px;
+            }
+
+            .container div{
+                background-color: #ccc;
+                margin-bottom: 15px;
+                height: 150px;
+                font-size: 22px;
+            }
+
+            /* para acertar as divs uma ao lado da outra */
+            .clearfix::after{
+                content: ' ';
+                display: block;
+                clear: both;
+            }
+
+            @media screen and (min-width: 400px){
+                body{
+                    background-color: orange;
+                }
+
+                /* para as divs ficarem uma ao lado da outra */
+                .container div{
+                    width: 48%;
+                    float: left;
+                    margin: 1%;
+                }
+            }            
+
+        </style>
+    </head>
+
+    <body>
+
+        <h1>Exemplo de Media Queries</h1>
+
+        <p>Parágrafo 1</p>
+
+        <!-- <div class="teste"></div> -->
+
+        <div class="container clearfix">
+            <div>Div 1</div>
+            <div>Div 2</div>
+        </div>
+        
+    </body>
+</html>
