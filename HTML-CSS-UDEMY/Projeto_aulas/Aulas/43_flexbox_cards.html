@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+    <head>
+        <title> Página de exemplo de estrutura básica do html </title>
+        <meta charset="utf-8">
+        <meta name=“author” content=“Nathália”>
+        <meta name=“description” content=“flexbox cards”>
+        <meta name=“keywords” content=“html5, css, tecnologia”>
+
+        <style>
+
+            .cardContainer{
+                display: flex;
+            }
+
+            .cardFlex{
+                border: 1px solid black;
+                width: 30%;
+                padding: 10px;
+                margin: 1%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            /* o p pegou todo o espaço em excesso p alinhar tudo */
+            .cardFlex p{
+                flex-grow: 1;
+            }
+
+            .cardFlex button{
+                align-self: flex-end;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <h2>Display Flex</h2>
+        <p>Acomodar ou distribuir elementos de modo fácil.</p>
+        <p>Ajuda a centralizar na vertical.</p>
+
+        <section class="cardContainer">
+
+            <article class="cardFlex">
+                <h3>Título</h3>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature 
+                from 45 BC, making it over 2000 years old.</p>
+                <button>Entra</button>
+            </article>
+
+            <article class="cardFlex">
+                <h3>Título</h3>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature 
+                from 45 BC, making it over 2000 years old.</p>
+                <button>Entra</button>
+            </article>
+
+            <article class="cardFlex">
+                <h3>Título</h3>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature 
+                from 45 BC, making it over 2000 years old.</p>
+                <button>Entra</button>
+            </article>
+        </section>
+        
+    </body>
+</html>
