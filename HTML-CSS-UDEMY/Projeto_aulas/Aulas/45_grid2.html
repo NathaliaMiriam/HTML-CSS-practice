@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+    <head>
+        <title> Página de exemplo de estrutura básica do html </title>
+        <meta charset="utf-8">
+        <meta name=“author” content=“Nathália”>
+        <meta name=“description” content=“grid”>
+        <meta name=“keywords” content=“html5, css, tecnologia”>
+
+        <style>
+
+            .gridContainer{
+                background-color: #ccc;
+                width: 90%;
+                margin: 30px auto;
+            }
+
+            .gridItem{
+                background-color: orange;
+                padding: 15px;
+                font-family: sans-serif;
+            }
+
+            /* GRID */
+            .gridContainer{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 100px 50px 1fr 50px;
+                grid-gap: 20px;
+            }
+
+            .header{
+                grid-column: 1 / -1;
+            }
+
+            .nav{
+                grid-column: 1 / 3;
+            }
+
+            .aside{
+                grid-row: 2 / -1;
+                grid-column: 3 / 4;
+                z-index: 1;
+            }
+
+            .main{
+                grid-column: 1 / 3;
+                min-height: 200px;
+            }
+
+            .footer{
+                grid-column: 1 / -1;
+                grid-row: 4 / 5;
+                background-color: red;
+                background-color: rgba(255,0,0,.5);
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <h2>Grid Layout</h2>
+
+        <div class="gridContainer">
+
+            <header class="header gridItem">Header</header>
+            <nav class="nav gridItem">Nav</nav>
+            <aside class="aside gridItem">Aside</aside>
+            <main class="main gridItem">Main</main>
+
+            <footer class="footer gridItem">Footer</footer>
+        </div>
+        
+    </body>
+</html>
